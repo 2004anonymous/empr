@@ -61,3 +61,6 @@ def delete_user(id:int):
     user.delete()
     dbr.commit()
     return {"msg":"User deleted succesfully !"}
+
+if __name__ == "__main__":
+    uvicorn.run(app, host="0.0.0.0", port=2004, log_level="info")
