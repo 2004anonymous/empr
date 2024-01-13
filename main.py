@@ -2,6 +2,7 @@ from fastapi import FastAPI, HTTPException, status
 from core import config
 from core.model import ResUserModel, ReqUserModel, BaseUserModel
 from core.schema import UserTable
+import uvicorn
 
 
 dbr = config.getDb()
