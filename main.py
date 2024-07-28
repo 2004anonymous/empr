@@ -23,6 +23,9 @@ async def get_users():
     mailer.sendVerifyMail(to_email= to_email, subject= subject, body= body)
     return {"messege":"Verification link was sent."}
 
+if __name__ == "__main__":
+    uvicorn.run(app, host="0.0.0.0", port=2004, log_level="info")
+
 
 # @app.get("/user/{id}", response_model=ResUserModel)
 # def get_userBy_id(id: int):
