@@ -2,6 +2,7 @@
 # from core import config
 from fastapi import FastAPI
 from core import smtp as mailer
+import uvicorn
 # from core.model import ResUserModel, ReqUserModel, BaseUserModel,LoginModel,RegisterModel
 # from core.schema import UserTable, PapersTable
 # import time
